@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    transition: 0.2s ease-in;
+}
+a:hover {
+    color:rgb(38, 188, 38);
+
+}
+ul {
+    display: flex;
+    gap: 20px;
+}
+li {
+    list-style: none;
+}
+
+
+/* header section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 40px;
+    padding-top: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover{
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+.signup {
+    background-color: rgb(38, 188, 38);
+    color: white;
+}
+/* hero section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 60px;
+    padding-block: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-black {
+    font-size: 2.8rem;
+    color: rgb(52, 46, 46);
+    opacity: .9;
+}
+.hero-green {
+    color: rgb(22, 145, 22);
+    font-size: 2.8rem;
+    opacity: .8;
+    margin-top: -10px;
+}
+.register-btn {
+    width: 120px;
+    height: 45px;
+    background-color: rgb(38, 188, 38);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+/* community section */
+.community{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.community h2 {
+    font-size: 1.6rem;
+    opacity: .8;
+}
+.community-boxes {
+    display: flex;
+    padding-block: 40px;
+    justify-content: space-between;
+    padding-inline: 150px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+}
+.box p {
+    opacity: .7;
+    font-size: 0.85rem;
+}
+/* unseen section */
+.unseen {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding-inline: 80px;
+}
+.unseen-image {
+    width: 40%;
+}
+.unseen-content {
+    width: 60%;
+
+}
+.unseen-content h2{
+   align-items: center;
+}
+    
+
+.unseen-content p {
+    font-size: .85rem;
+    opacity: .8;
+}
+.unseen-image img {
+    width: 100%;
+}
+/* helping section */
+.helping {
+    font-family: 'Poppins', sans-serif;
+    padding-inline: 120px;
+    display: flex;
+    align-items: center;
+    padding-block: 50px;
+    gap: 200px;
+    background-color: #F5F7FA;
+}
+.green {
+    color: rgb(22, 145, 22);
+}
+.helping-box {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    gap: 4px;
+}
+.helping-box h2 {
+    opacity: .8;
+}
+.helping-box p {
+    font-size: 0.85rem;
+}
+.helping-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+.helping-content {
+    width: 520px;
+}
+.learn {
+    margin-top: 40px;
+}
+/* footer section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #263238;
+    color: white;
+    padding-block: 25px;
+    padding-inline: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo p{
+    font-size: 0.85rem;
+}
+.footer-list ul{
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list ul li {
+    font-size: 0.9rem;
+}
+.footer-inputfield{
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(114, 109, 109);
+    margin-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-inline: 5px;
+    background-color: transparent;
+    color: white;
+}
+i {
+    border: 1px solid rgb(49, 47, 47);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(107, 106, 106);
+    margin-top: 30px;
+}
+/* For tablets and smaller screens */
+@media (max-width: 991px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 20px;
+    }
+
+    .links ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .community-boxes {
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 20px;
+    }
+
+    .helping {
+        flex-direction: column;
+        gap: 40px;
+        padding-inline: 20px;
+    }
+
+    .helping-icons {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .unseen {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-inputfield {
+        width: 80%;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 600px) {
+    .hero-black, span {
+        font-size: 2rem;
+    }
+
+    .unseen-content h2 {
+        font-size: 2rem;
+    }
+
+    .community h2 {
+        font-size: 1.2rem;
+    }
+
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+
+    .nav_btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+/* ============= RESPONSIVE DESIGN ============= */
+
+/* For devices with width up to 991px (Tablet and below) */
+@media (max-width: 991px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .clients img {
+        width: 90%;
+        height: auto;
+    }
+
+    .community-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-inline: 20px;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .unseen {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .unseen-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .helping {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        padding: 30px 20px;
+    }
+
+    .helping-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .helping-content {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .footer-logo,
+    .footer-company,
+    .footer-support,
+    .footer-input {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-inputfield {
+        width: 80%;
+    }
+}
+
+/* For devices with width up to 600px (Mobile) */
+@media (max-width: 600px) {
+    .hero-black {
+        font-size: 2rem;
+    }
+
+    span {
+        font-size: 2rem;
+    }
+
+    .community h2,
+    .unseen-content h2,
+    .helping-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .nav_btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+        margin-right: 0;
+    }
+
+    button.register-btn {
+        margin: 20px auto;
+    }
+
+    .footer-inputfield {
+        width: 90%;
+    }
+
+    .links ul li a {
+        font-size: 1rem;
+    }
+
+    .helping-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .helping-box h2 {
+        font-size: 1.5rem;
+    }
+}
+
+  
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+    }
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+    
+   
